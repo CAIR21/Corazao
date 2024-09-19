@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Corazon</title>
   <link rel="stylesheet" href="./corazon.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
 
+    .img2 {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+      border-radius: 0px;
+      object-fit: cover;
+    }
+
+    #heart {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 8;
+    }
+  </style>
 </head>
 <body>
-
-<canvas id="heart"></canvas>
-
-  <script  src="./corazon.js"></script>
-
+  <canvas id="heart"></canvas>
+  <img class="img2" src="https://cutekawaiiresources.files.wordpress.com/2016/11/cinnamoroll-35.gif?w=90&h=90&zoom=2">
+  <script src="./corazon.js"></script>
 </body>
 </html>
